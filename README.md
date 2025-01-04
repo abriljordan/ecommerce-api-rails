@@ -118,4 +118,3 @@ rails server
 
 4. Test the API Endpoints:
 Use tools like Postman or curl to test endpoints.
-
