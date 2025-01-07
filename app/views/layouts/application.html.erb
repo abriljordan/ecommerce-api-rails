@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-Commerce</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <%= javascript_importmap_tags %>
+</head>
+<body>
+  <header>
+    <nav>
+      <%= link_to "Home", root_path %> |
+      <%= link_to "Products", api_v1_products_path %> |
+      <%= link_to "Cart", api_v1_cart_path(current_cart) %>
+    </nav>
+  </header>
+  <%= yield %>
+  <footer>
+    <p>&copy; <%= Date.today.year %> E-Commerce App</p>
+  </footer>
+</body>
+</html>

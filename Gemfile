@@ -52,3 +52,5 @@ gem "active_model_serializers"  # For API serialization
 gem "rack-cors"             # For handling CORS
 gem "stripe"                # For payment integration
 gem "rspec-rails", group: [ :development, :test ]  # For testing
+gem "stimulus-rails"
+gem "importmap-rails"
